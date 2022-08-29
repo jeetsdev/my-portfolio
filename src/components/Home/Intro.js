@@ -2,11 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-	AiFillGithub,
-	AiOutlineTwitter,
-	AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Intro() {
@@ -20,8 +16,9 @@ function Intro() {
 							MYSELF
 						</h1>
 						<p className="home-about-body">
-							I fell in love with programming, now playing around with tech and exploring new things and I have at least
-							learnt something, I think… 🤷‍♂️
+							I fell in love with programming, now playing around
+							with tech and exploring new things and I have at
+							least learnt something, I think… 🤷‍♂️
 							<br />
 							<br />I am fluent in
 							<i>
