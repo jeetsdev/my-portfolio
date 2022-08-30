@@ -5,6 +5,7 @@ import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
 function ProjectCards(props) {
+	console.log("props: ", props);
 	return (
 		<Card className="project-card-view">
 			<Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -15,7 +16,21 @@ function ProjectCards(props) {
 						{props.description}
 					</Card.Text>
 				</div>
-				<div style={{marginTop:"2rem"}}>
+				<div
+					className="purple"
+					style={{
+						fontSize: "1.5rem",
+						display: "flex",
+						gap: ".5rem",
+						margin: ".5rem 0",
+					}}
+				>
+					{props?.icons?.map((icon) => {
+						console.log("icon: ", icon);
+						return <span key={Math.random()}>{icon}</span>;
+					})}
+				</div>
+				<div style={{ marginTop: "2rem" }}>
 					<Button
 						variant="primary"
 						href={props.demoLink}
