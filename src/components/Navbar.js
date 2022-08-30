@@ -35,9 +35,19 @@ function NavBar() {
 		>
 			<Container>
 				<Navbar.Brand href="/" className="d-flex">
-					<h2 className="purple" style={{ fontSize: "2.2rem",fontWeight:"600" }}>
-						RS.
-					</h2>
+					<Link
+						as={Link}
+						to="/"
+						onClick={() => updateExpanded(false)}
+						style={{ textDecoration: "none" }}
+					>
+						<h2
+							className="purple"
+							style={{ fontSize: "2.2rem", fontWeight: "600" }}
+						>
+							RS.
+						</h2>
+					</Link>
 				</Navbar.Brand>
 				<Navbar.Toggle
 					aria-controls="responsive-navbar-nav"
