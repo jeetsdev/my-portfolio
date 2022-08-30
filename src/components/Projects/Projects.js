@@ -14,6 +14,7 @@ import {
 	SiRedux,
 	SiJavascript,
 	SiCss3,
+	SiFirebase,
 	SiRazorpay,
 } from "react-icons/si";
 
@@ -95,7 +96,7 @@ function Projects() {
 							description="Sudo Quiz is an online quiz platform to play quizzes."
 							ghLink="https://github.com/jeetsdev/sudo-quiz-react"
 							demoLink="https://sudo-quiz.netlify.app/"
-							icons={[<DiReact />]}
+							icons={[<DiReact />, <SiFirebase />]}
 						/>
 					</Col>
 				</Row>
